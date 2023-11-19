@@ -34,6 +34,7 @@ npm run build
 ```
 
 ### Deployment: GitHub Pages
+- Activate workflow by uncommenting line 27 #jobs in .github\workflows\deploy.yml
 - GitHub Pages most likely runs in subfolder so set .env basepath to repository name
 ```bash
 NEXT_PUBLIC_BASE_PATH=/github-repository-name
@@ -59,9 +60,7 @@ npm run build-storybook
 npm run format:fix
 ```
 
-
 ## VS Code plugins (recommended)
-
 - vscode-styled-components
 
 ## Design tokens (optional integration)
@@ -71,7 +70,7 @@ npm run format:fix
   https://www.figma.com/community/file/1304079459895956066
 - Use Tokens Studio to generate tokens
   - A: Link Tokens Studio to repository and push tokens.json
-  - B: Copy and paste tokens.json contens manually
+  - B: Copy and paste tokens.json contents manually
 - Generate tokens in local repository
 
 **Custom converter**

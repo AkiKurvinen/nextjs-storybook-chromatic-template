@@ -10,12 +10,9 @@ const nextConfig = {
     emotion: true,
   },
   images: {
-        loader: 'akamai',
+    loader: 'akamai',
     path: '',
-   // loader: 'custom',
-   unoptimized: true,
-   // path: process.env.NEXT_PUBLIC_BASE_PATH,
-   // loaderFile: './src/imageLoader.ts',
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -25,8 +22,6 @@ const nextConfig = {
       },
     ],
   },
-
-  // images: { unoptimized: true}
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
