@@ -1,0 +1,171 @@
+{
+  "palette": {
+    "primary": {
+      "main": "#ac0028",
+      "dark": "#8c0021",
+      "light": "#e42f59",
+      "contrastText": "#fff7f7"
+    },
+    "text": {
+      "primary": "#333333",
+      "secondary": "#555555"
+    },
+    "background": {
+      "paper": "#ffffff"
+    },
+    "secondary": {
+      "main": "#434190",
+      "light": "#8381ea",
+      "dark": "#201e64",
+      "contrastText": "#fdf7ff"
+    },
+    "error": {
+      "main": "#dc143c"
+    }
+  },
+  "typography": {
+    "htmlFontSize": 16,
+    "fontFamily": "Raleway",
+    "fontSize": 14,
+    "fontWeightLight": 300,
+    "fontWeightRegular": 400,
+    "fontWeightMedium": 500,
+    "fontWeightBold": 700,
+    "h1": {
+      "fontFamily": "Raleway",
+      "fontWeight": "bold",
+      "fontSize": "3em",
+      "lineHeight": "auto",
+      "letterSpacing": "0%",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "uppercase",
+      "textDecoration": "none"
+    },
+    "h2": {
+      "fontFamily": "Raleway",
+      "fontWeight": "bold",
+      "fontSize": "2.5em",
+      "lineHeight": "auto",
+      "letterSpacing": "0%",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "none",
+      "textDecoration": "none"
+    },
+    "h3": {
+      "fontFamily": "Raleway",
+      "fontWeight": "bold",
+      "fontSize": "2em",
+      "lineHeight": "auto",
+      "letterSpacing": "0%",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "none",
+      "textDecoration": "none"
+    },
+    "h4": {
+      "fontFamily": "Raleway",
+      "fontWeight": "bold",
+      "fontSize": "1.5em",
+      "lineHeight": "auto",
+      "letterSpacing": "0%",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "none",
+      "textDecoration": "none"
+    },
+    "h5": {
+      "fontFamily": "Raleway",
+      "fontWeight": "bold",
+      "fontSize": "1.25em",
+      "lineHeight": "auto",
+      "letterSpacing": "0%",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "none",
+      "textDecoration": "none"
+    },
+    "h6": {
+      "fontFamily": "Raleway",
+      "fontWeight": "bold",
+      "fontSize": "1.13em",
+      "lineHeight": "auto",
+      "letterSpacing": "0%",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "none",
+      "textDecoration": "none"
+    },
+    "subtitle1": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "1rem",
+      "lineHeight": 1.75,
+      "letterSpacing": "0.00938em"
+    },
+    "subtitle2": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 500,
+      "fontSize": "0.875rem",
+      "lineHeight": 1.57,
+      "letterSpacing": "0.00714em"
+    },
+    "body1": {
+      "fontFamily": "Raleway",
+      "fontWeight": "regular",
+      "fontSize": "1em",
+      "lineHeight": "auto",
+      "letterSpacing": "0%",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "none",
+      "textDecoration": "none"
+    },
+    "body2": {
+      "fontFamily": "Raleway",
+      "fontWeight": "regular",
+      "fontSize": "0.75em",
+      "lineHeight": "auto",
+      "letterSpacing": "0%",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "none",
+      "textDecoration": "none"
+    },
+    "button": {
+      "fontFamily": "Raleway",
+      "fontWeight": "regular",
+      "fontSize": "1em",
+      "lineHeight": "auto",
+      "letterSpacing": "0%",
+      "textTransform": "uppercase",
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "uppercase",
+      "textDecoration": "none"
+    },
+    "caption": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "0.75rem",
+      "lineHeight": 1.66,
+      "letterSpacing": "0.03333em"
+    },
+    "overline": {
+      "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+      "fontWeight": 400,
+      "fontSize": "0.75rem",
+      "lineHeight": 2.66,
+      "letterSpacing": "0.08333em",
+      "textTransform": "uppercase"
+    },
+    "inherit": {
+      "fontFamily": "inherit",
+      "fontWeight": "inherit",
+      "fontSize": "inherit",
+      "lineHeight": "inherit",
+      "letterSpacing": "inherit"
+    }
+  }
+}

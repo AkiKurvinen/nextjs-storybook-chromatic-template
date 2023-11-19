@@ -1,0 +1,54 @@
+/**
+ * Do not edit directly
+ * Generated on Thu, 26 Oct 2023 09:43:23 GMT
+ */
+
+:root {
+  --palette-light-primary-main: #ac0028;
+  --palette-light-primary-dark: #8c0021;
+  --palette-light-primary-light: #e42f59;
+  --palette-light-text-primary: #333333;
+  --palette-light-background-paper: #ffffff;
+  --palette-light-secondary-main: #434190;
+  --palette-light-secondary-light: #8381ea;
+  --palette-light-secondary-dark: #201e64;
+  --palette-light-error-main: #dc143c;
+  --palette-dark-primary-main: #ffffff;
+  --palette-dark-background-paper: #333333;
+  --palette-dark-background-default: #222222;
+  --palette-dark-secondary-main: #d7d7d7;
+  --palette-dark-text-primary: #ffffff;
+  --palette-dark-error-main: #efefef;
+  --palette-gold-primary-main: #c4a747;
+  --palette-gold-primary-dark: #9a8541;
+  --palette-gold-primary-light: #f0cb52;
+  --font-families-raleway: Raleway;
+  --font-families-kalam: Kalam;
+  --font-families-courier-prime: 'Courier Prime';
+  --line-heights-0: AUTO;
+  --font-weights-raleway-0: 400;
+  --font-weights-raleway-1: 700;
+  --font-weights-kalam-2: 400;
+  --font-weights-kalam-3: 700;
+  --font-weights-courier-prime-4: 400;
+  --font-size-0: 12px;
+  --font-size-1: 14px;
+  --font-size-2: 16px;
+  --font-size-3: 40px;
+  --font-size-4: 44px;
+  --font-size-5: 48px;
+  --letter-spacing-0: 0em;
+  --letter-spacing-1: 0.01em;
+  --paragraph-spacing-0: 0;
+  --typography-light-body: 400 16px / AUTO Raleway;
+  --typography-light-h1: 700 48px / AUTO Raleway;
+  --typography-light-h2: 700 40px / AUTO Raleway;
+  --typography-gold-body: 400 14px / AUTO Kalam;
+  --typography-gold-h1: 700 44px / AUTO Kalam;
+  --typography-gold-h2: 700 48px / AUTO Kalam;
+  --typography-dark-body: 400 12px / AUTO 'Courier Prime';
+  --text-case-none: none;
+  --text-case-uppercase: uppercase;
+  --text-decoration-none: none;
+  --paragraph-indent-0: 0px;
+}
