@@ -10,6 +10,8 @@ const nextConfig = {
     emotion: true,
   },
   images: {
+        loader: 'akamai',
+    path: '',
    // loader: 'custom',
    unoptimized: true,
    // path: process.env.NEXT_PUBLIC_BASE_PATH,
