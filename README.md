@@ -20,24 +20,36 @@ npm run storybook
 
 **next/image & Storybook basepath workaround:**
 - Create/modify .env file and set NEXT_PUBLIC_BASE_PATH to [spacebar] so it's not undefined
+- This also allows to run app in dev mode without subfolder in URL
 ```bash
 NEXT_PUBLIC_BASE_PATH= 
 ```
 
-## Deployment: Static Site Generation (SSG)
+## Deployment
+- Project is set to use Static Site Generation (SSG)
 - No cloud application platform needed
-- When deployign app into subdirectory on server set base path
-```bash
-NEXT_PUBLIC_BASE_PATH=/appname
-```
-- Run build command below
+- Run build command below and upload dist/ files to server
 ```bash
 npm run build
 ```
+
+### Deployment: GitHub Pages
+- GitHub Pages most likely runs in subfolder so set .env basepath to repository name
+```bash
+NEXT_PUBLIC_BASE_PATH=/github-repository-name
+```
+
+### Deployment: Subdirectory project (SSG)
+- When deploying app into subdirectory on server set base path in .env
+- Run normal build command above
 - Move contents of 'dist' folder into /appname/ folder on server 
 - Site should be visible at yourdomain.com/appname
+```bash
+NEXT_PUBLIC_BASE_PATH=/appname
+```
 
 ## Deployment: Storybook
+- Run build command blow and move storybook-static to server
 ```bash
 npm run build-storybook
 ```
