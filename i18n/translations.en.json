@@ -1,0 +1,30 @@
+{
+  "i18n": {
+    "ui": {
+      "languageSwitcher": "Choose Language: "
+    },
+    "nav": {
+      "index": {
+        "text": "Home",
+        "route": "/"
+      },
+      "stock": {
+        "text": "Stock",
+        "route": "/"
+      },
+        "tokens": {
+        "text": "Tokens",
+        "route": "/tokens"
+      },
+        "admin": {
+        "text": "Admin",
+        "route": "/admin"
+      }
+    },
+    "stockpanel": {
+      "headline": "Stock",
+      "listheadline": "Items",
+      "previewheadline": "Preview"
+    }
+  }
+}

@@ -35,8 +35,9 @@ interface StockPanelProps {
   data: any;
   setcurrentitem: React.Dispatch<React.SetStateAction<any>>;
   imageLoadError?: any;
+  listheadline?: string;
+  previewheadline?: string;
 }
-
 export interface iItems {
   [key: string]: number | string | undefined;
   Apples?: number;
@@ -79,7 +80,7 @@ const UnstyledStockPanel: FC<StockPanelProps> = ({
     <section {...props}>
       <div className='stock-panels'>
         <div className='stock-list'>
-          <Typography variant='body1'>Items</Typography>
+          <Typography variant='body1'>{props.listheadline? props.listheadline: 'Items'}</Typography>
           <StockList
             data={props.data}
             admin={admin}
@@ -89,7 +90,7 @@ const UnstyledStockPanel: FC<StockPanelProps> = ({
         </div>
         <div />
         <div className='stock-preview'>
-          <Typography variant='body1'>Preview</Typography>
+          <Typography variant='body1'>{props.previewheadline? props.previewheadline: 'Preview'}</Typography>
           <Figure
             src={`${process.env.NEXT_PUBLIC_BASE_PATH&&process.env.NEXT_PUBLIC_BASE_PATH}/img/${currentImage}.jpg`}
             alt={currentItem}

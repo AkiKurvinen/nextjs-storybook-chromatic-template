@@ -1,0 +1,27 @@
+{
+  "i18n": {
+    "nav": {
+      "index": {
+        "text": "Etusovi",
+        "route": "/"
+      },
+      "stock": {
+        "text": "Varasto",
+        "route": "/"
+      },
+        "tokens": {
+        "text": "Tokenit",
+        "route": "/tokens"
+      },
+        "admin": {
+        "text": "Hallintapaneeli",
+        "route": "/admin"
+      }
+    },
+    "stockpanel": {
+      "headline": "Varasto",
+      "listheadline": "Tavarat",
+      "previewheadline": "Esikatselu"
+    }
+  }
+}

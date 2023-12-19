@@ -1,9 +1,7 @@
 import { LoadingButton } from '@mui/lab';
 import { IconButton } from '@mui/material';
 import type { Meta, StoryObj } from '@storybook/react';
-import { ArrowForward, ArrowBack } from '@mui/icons-material';
-
-const iconMap = { ArrowForward, ArrowBack };
+import { ArrowForward } from '@mui/icons-material';
 
 const meta: Meta<typeof LoadingButton> = {
   title: 'Components/Atoms/Button',
@@ -76,5 +74,12 @@ export const Loading: Story = {
     children: ['Button'],
     variant: 'contained',
     loading: true,
+  },
+  parameters: {
+    design: {
+      type: 'figspec',
+      url: 'https://www.figma.com/file/vnrByYRolXqdr2ui1oCHBU/Untitled?type=whiteboard&node-id=0%3A1&t=QAtVS7e2SaGmzmI4-1',
+      accessToken: process.env.STORYBOOK_FIGMA_ACCESS_TOKEN,
+    },
   },
 };

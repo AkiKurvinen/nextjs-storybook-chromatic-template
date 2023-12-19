@@ -5,11 +5,6 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 import { NavItem } from '../../atoms/NavItem/NavItem';
 
-type HrefLink = {
-  target: string;
-  text: string;
-};
-
 interface NavProps {
   logo?: React.ReactNode;
   children?: React.ReactNode;
@@ -49,7 +44,6 @@ const nav_base = (theme: Theme) => css`
     text-decoration: none;
   }
 
-  /* Create Hamburger component? */
   .burger {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -70,9 +64,7 @@ const nav_base = (theme: Theme) => css`
     background-color: ${theme.palette.background.paper};
     color: ${theme.palette.text.primary};
   }
-
-  /* Create logo component? */
-  .logo {
+  .logo a{
     display: flex;
     align-items: center;
     float: left;
@@ -135,9 +127,8 @@ const StyledNav: FC<NavProps> = ({
 
   return (
     <div {...props}>
-      <a href='#' className='logo'>
-        {logo && logo} {name && name}
-      </a>
+        <span className='logo'>{logo && logo}</span>
+
       {search && search}
 
       {!open ? (

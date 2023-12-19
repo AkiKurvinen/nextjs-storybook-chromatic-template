@@ -2,6 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import { Theme, Typography } from '@mui/material';
 import { stock_mock_data } from './mock_data';
 import { StockPanelSkeleton, StockPanelView } from './StockPanelView';
+import {useTranslation,useLanguageQuery} from "next-export-i18n";
 
 interface StockPanelControllerProps {
   theme?: Theme;
@@ -26,6 +27,8 @@ export const StockPanelController: FC<StockPanelControllerProps> = ({
   const [data, setData] = useState<iResponse | null>(null);
   const [currentItem, setcurrentitem] = useState('placeholder');
   const [currentImage, setCurrentImage] = useState(currentItem);
+
+  const { t } = useTranslation();
 
   function setAll(name: string) {
     setcurrentitem(name);
@@ -76,12 +79,14 @@ export const StockPanelController: FC<StockPanelControllerProps> = ({
   return (
     <>
       <Typography variant='h4' sx={{ textAlign: 'left' }}>
-        Stock
+        {t('stockpanel.headline')}
       </Typography>
       {!data ? (
         <StockPanelSkeleton />
       ) : (
         <StockPanelView
+          listheadline = {t('stockpanel.listheadline')}
+          previewheadline = {t('stockpanel.previewheadline')}
           data={data}
           admin={admin}
           currentItem={currentItem}
