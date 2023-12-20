@@ -11,19 +11,25 @@ import createEmotionServer from '@emotion/server/create-instance';
 import { AppType } from 'next/app';
 import { createEmotionCache } from '../src/createEmotionCache';
 import { MUIAppProps } from './_app';
-import i18n from '../i18n/index'
+import i18n from '../i18n/index';
 
 interface MyDocumentProps extends DocumentProps {
   emotionStyleTags: JSX.Element[];
 }
 
 export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
-      const currentLocale = i18n.defaultLang
+  const currentLocale = i18n.defaultLang;
   return (
     <Html lang={currentLocale}>
       <Head>
         {/* PWA primary color */}
-        <link rel='shortcut icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH&&process.env.NEXT_PUBLIC_BASE_PATH}/img/svg/pear.svg`}/>
+        <link
+          rel='shortcut icon'
+          href={`${
+            process.env.NEXT_PUBLIC_BASE_PATH &&
+            process.env.NEXT_PUBLIC_BASE_PATH
+          }/img/svg/pear.svg`}
+        />
         <meta name='emotion-insertion-point' content='' />
         <link
           rel='preload'

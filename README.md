@@ -12,6 +12,7 @@
 - Tokens Studio for Figma
 
 ## Development (App & Storybook)
+
 ```bash
 npm install
 npm run dev
@@ -19,48 +20,60 @@ npm run storybook
 ```
 
 **next/image & Storybook basepath workaround:**
+
 - Create/modify .env file and set NEXT_PUBLIC_BASE_PATH to [spacebar] so it's not undefined
 - This also allows to run app in dev mode without subfolder in URL
+
 ```bash
-NEXT_PUBLIC_BASE_PATH= 
+NEXT_PUBLIC_BASE_PATH=
 ```
 
 ## Deployment
+
 - Project is set to use Static Site Generation (SSG)
 - No cloud application platform needed
 - Run build command below and upload dist/ files to server
+
 ```bash
 npm run build
 ```
 
 ### Deployment: GitHub Pages
+
 - Activate workflow by uncommenting line 27 #jobs in .github\workflows\deploy.yml
 - GitHub Pages most likely runs in subfolder so set .env basepath to repository name
+
 ```bash
 NEXT_PUBLIC_BASE_PATH=/github-repository-name
 ```
 
 ### Deployment: Subdirectory project (SSG)
+
 - When deploying app into subdirectory on server set base path in .env
 - Run normal build command above
-- Move contents of 'dist' folder into /appname/ folder on server 
+- Move contents of 'dist' folder into /appname/ folder on server
 - Site should be visible at yourdomain.com/appname
+
 ```bash
 NEXT_PUBLIC_BASE_PATH=/appname
 ```
 
 ## Deployment: Storybook
+
 - Run build command blow and move storybook-static to server
+
 ```bash
 npm run build-storybook
 ```
 
 ## Code formatting
+
 ```bash
 npm run format:fix
 ```
 
 ## VS Code plugins (recommended)
+
 - vscode-styled-components
 
 ## Design tokens (optional integration)
@@ -107,7 +120,9 @@ node themes/tools/muigen.mjs dark darkmuitheme ./themes/tokens.json Theme
 ```bash
 npx chromatic --project-token=your_token_goes_here
 ```
-*or create .env file and add variable project-token=your_token_goes_here*
+
+_or create .env file and add variable project-token=your_token_goes_here_
+
 ```bash
 npm run chromatic
 ```
@@ -116,7 +131,7 @@ npm run chromatic
 
 - Embed Figma designs into Storybook with @storybook/addon-designs
 - Create Figma Access Token  
-https://www.figma.com/developers/api#access-tokens
+  https://www.figma.com/developers/api#access-tokens
 - Create .env file to repository root
 - Add variable STORYBOOK_FIGMA_ACCESS_TOKEN=your_token_goes_here
 

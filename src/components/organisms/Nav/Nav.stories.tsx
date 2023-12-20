@@ -17,7 +17,12 @@ type Story = StoryObj<typeof Nav>;
 
 export const Default: Story = {
   args: {
-    logo: <a href='#'><Pear />Fruity Oy</a>,
+    logo: (
+      <a href='#'>
+        <Pear />
+        Fruity Oy
+      </a>
+    ),
     name: 'Fruity Oy',
     children: [
       <Link key='1' href='/stock'>

@@ -91,7 +91,10 @@ const UnstyledWeatherWidget: FC<WeatherWidgetProps> = ({ ...props }: any) => {
           {data?.mock ? (
             <Image
               className='weatherimg'
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH&&process.env.NEXT_PUBLIC_BASE_PATH}/img/04d.png`}
+              src={`${
+                process.env.NEXT_PUBLIC_BASE_PATH &&
+                process.env.NEXT_PUBLIC_BASE_PATH
+              }/img/04d.png`}
               alt={'Cloudy'}
               width={50}
               height={50}

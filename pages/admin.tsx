@@ -10,7 +10,12 @@ export default function Admin(props: any) {
   const [admin, setAdmin] = useState(true);
   return (
     <PrimaryPage
-      nav={<><NavController/><ThemeBar {...props} /></>}
+      nav={
+        <>
+          <NavController />
+          <ThemeBar {...props} />
+        </>
+      }
       main={<StockPanelController admin={admin} />}
       footer={
         <Footer>

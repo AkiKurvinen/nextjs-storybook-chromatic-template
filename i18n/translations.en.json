@@ -12,14 +12,18 @@
         "text": "Stock",
         "route": "/"
       },
-        "tokens": {
+      "tokens": {
         "text": "Tokens",
         "route": "/tokens"
       },
-        "admin": {
+      "admin": {
         "text": "Admin",
         "route": "/admin"
       }
+    },
+    "search": {
+      "search": "Search",
+      "keywords": "Keywords"
     },
     "stockpanel": {
       "headline": "Stock",

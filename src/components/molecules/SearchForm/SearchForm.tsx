@@ -8,25 +8,29 @@ interface SearchFormProps {
   buttonlabel?: string;
   theme?: Theme;
   onlyicon?: boolean;
+  handleSearch?: any;
+  handleKeywords?: any;
 }
-
 export const StyledSearchForm: FC<SearchFormProps> = ({
   textfieldlabel = 'Keywords',
   buttonlabel = 'Search',
   onlyicon = false,
+
   ...props
 }: SearchFormProps) => {
   return (
     <form {...props}>
       <div className='invertcolors'>
         {onlyicon ? (
-          <IconButton className='onlyicon'>
+          <IconButton className='onlyicon' onClick={props.handleSearch}>
             <Search />
           </IconButton>
         ) : (
           <>
-            <TextField label={textfieldlabel}></TextField>
-            <Button variant='contained'>{buttonlabel}</Button>
+            <TextField label={textfieldlabel} onChange={props.handleKeywords} />
+            <Button variant='contained' onClick={props.handleSearch}>
+              {buttonlabel}
+            </Button>
           </>
         )}
       </div>

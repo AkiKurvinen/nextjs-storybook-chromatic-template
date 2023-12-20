@@ -64,7 +64,7 @@ const nav_base = (theme: Theme) => css`
     background-color: ${theme.palette.background.paper};
     color: ${theme.palette.text.primary};
   }
-  .logo a{
+  .logo a {
     display: flex;
     align-items: center;
     float: left;
@@ -127,7 +127,7 @@ const StyledNav: FC<NavProps> = ({
 
   return (
     <div {...props}>
-        <span className='logo'>{logo && logo}</span>
+      <span className='logo'>{logo && logo}</span>
 
       {search && search}
 

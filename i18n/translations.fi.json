@@ -9,14 +9,18 @@
         "text": "Varasto",
         "route": "/"
       },
-        "tokens": {
+      "tokens": {
         "text": "Tokenit",
         "route": "/tokens"
       },
-        "admin": {
+      "admin": {
         "text": "Hallintapaneeli",
         "route": "/admin"
       }
+    },
+    "search": {
+      "search": "Hae",
+      "keywords": "Avainsanat"
     },
     "stockpanel": {
       "headline": "Varasto",

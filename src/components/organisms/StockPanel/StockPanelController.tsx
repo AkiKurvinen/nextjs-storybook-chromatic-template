@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import { Theme, Typography } from '@mui/material';
 import { stock_mock_data } from './mock_data';
 import { StockPanelSkeleton, StockPanelView } from './StockPanelView';
-import {useTranslation,useLanguageQuery} from "next-export-i18n";
+import { useTranslation, useLanguageQuery } from 'next-export-i18n';
 
 interface StockPanelControllerProps {
   theme?: Theme;
@@ -85,8 +85,8 @@ export const StockPanelController: FC<StockPanelControllerProps> = ({
         <StockPanelSkeleton />
       ) : (
         <StockPanelView
-          listheadline = {t('stockpanel.listheadline')}
-          previewheadline = {t('stockpanel.previewheadline')}
+          listheadline={t('stockpanel.listheadline')}
+          previewheadline={t('stockpanel.previewheadline')}
           data={data}
           admin={admin}
           currentItem={currentItem}

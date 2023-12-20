@@ -33,12 +33,19 @@ export const StockItemSkeleton: FC<SkeletonProps> = ({ ...props }) => (
   </Skeleton>
 );
 
-const UnstyledStockItem: FC<StockItemProps> = ({label, amount, isAdmin, isOut, color = 'primary', ...props}:StockItemProps) => {
- // Cases for Storybook demo:
- // {amount ? amount : 'N/A'}
- // {isOut || amount ? isOut: (amount ? amount : 'N/A')}
- // {isOut ? isOut: (amount ? amount : 'N/A')}
- 
+const UnstyledStockItem: FC<StockItemProps> = ({
+  label,
+  amount,
+  isAdmin,
+  isOut,
+  color = 'primary',
+  ...props
+}: StockItemProps) => {
+  // Cases for Storybook demo:
+  // {amount ? amount : 'N/A'}
+  // {isOut || amount ? isOut: (amount ? amount : 'N/A')}
+  // {isOut ? isOut: (amount ? amount : 'N/A')}
+
   return (
     <li
       {...props}
@@ -61,9 +68,8 @@ const UnstyledStockItem: FC<StockItemProps> = ({label, amount, isAdmin, isOut, c
         </IconButton>
       )}
     </li>
-  )
-}
-
+  );
+};
 
 export const StockItem = styled(UnstyledStockItem)`
   margin-bottom: 0.25em;
