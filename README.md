@@ -46,6 +46,8 @@ npm run build
 ```bash
 NEXT_PUBLIC_BASE_PATH=/github-repository-name
 ```
+- [Preview App ->](https://akikurvinen.github.io/nextjs-storybook-chromatic-template/)
+- [Preview Storybook ->](https://akikurvinen.github.io/nextjs-storybook-chromatic-template/storybook)
 
 ### Deployment: Subdirectory project (SSG)
 
