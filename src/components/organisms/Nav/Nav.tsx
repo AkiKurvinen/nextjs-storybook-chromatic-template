@@ -156,7 +156,7 @@ const StyledNav: FC<NavProps> = ({
 
 export const Nav = styled(StyledNav)`
   ${(props) => nav_base(props.theme)}
-  ${(props) => props.theme.breakpoints.down('sm')} {
+  ${(props) => props.theme.breakpoints.down('md')} {
     ${(props) => mobile_styles(props.theme)}
   }
 `;

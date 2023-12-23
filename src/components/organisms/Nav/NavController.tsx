@@ -17,7 +17,7 @@ export const NavController = () => {
   const { t } = useTranslation();
   const [query] = useLanguageQuery();
 
-  const isExtraSmallSize = useMediaQuery(theme.breakpoints.down('md'));
+  const isExtraSmallSize = useMediaQuery(theme.breakpoints.down('sm'));
 
   const handleKeywords = (event: any) => {
     setKeywords(event.target.value);
