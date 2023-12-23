@@ -44,10 +44,10 @@
     "webpack-merge": "^5.9.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.9",
-    "@babel/eslint-parser": "^7.22.9",
+    "@babel/core": "^7.23.6",
+    "@babel/eslint-parser": "^7.23.3",
     "@babel/preset-env": "^7.22.9",
-    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.22.5",
     "@next/eslint-plugin-next": "^13.4.10",
     "@storybook/addon-essentials": "^7.5.3",
@@ -62,8 +62,6 @@
     "@swc/core": "^1.3.69",
     "@types/node": "latest",
     "@types/react": "latest",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-emotion": "^10.0.33",
     "chromatic": "^7.3.0",
     "eslint": "^8.45.0",
     "eslint-config-next": "^14.0.3",
