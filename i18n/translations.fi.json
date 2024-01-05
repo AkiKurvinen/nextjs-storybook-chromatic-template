@@ -2,7 +2,7 @@
   "i18n": {
     "nav": {
       "index": {
-        "text": "Etusovi",
+        "text": "Etusivu",
         "route": "/"
       },
       "stock": {
