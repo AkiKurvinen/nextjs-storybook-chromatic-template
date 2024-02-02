@@ -1,6 +1,6 @@
 # Atomic Design System, Figma Tokens, Next.js, Storybook, Emotion, MUI, Chromatic example in TypeScript
 
-## V2 with Next.js App Directory
+## V2 with Next.js App Directory below
 - [nextjs-storybook-mui-app-dir-template](https://github.com/AkiKurvinen/nextjs-storybook-mui-app-dir-template)
 - i18next localized routes with static export
 - Chromatic language modes
