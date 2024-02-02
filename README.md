@@ -15,6 +15,9 @@
 - Material UI
 - Chromatic
 - Tokens Studio for Figma
+  
+## Architecture diagram
+[FigJam](https://www.figma.com/file/vnrByYRolXqdr2ui1oCHBU/Workflow?type=whiteboard&node-id=0-1&t=vHWcjchZgxGdLwVz-0)
 
 ## Development (App & Storybook)
 
