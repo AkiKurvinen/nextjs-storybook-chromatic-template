@@ -74,13 +74,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: nextjs-export
           path: ./dist
-      - name: Upload Storybook artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: storybook-static
-          path: ./dist/storybook
 
   # Deployment job
   deploy:
@@ -90,16 +84,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Download Next.js artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: nextjs-export
-          path: ./dist
-      - name: Download Storybook artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: storybook-static
-          path: ./out/storybook
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
