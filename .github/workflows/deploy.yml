@@ -72,7 +72,7 @@ jobs:
       - name: Add Storybook
         run: npm run build-storybook -- -o dist/storybook
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           name: nextjs-export
           path: ./dist
@@ -103,5 +103,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-        with:
-          artifact_path: ./dist
