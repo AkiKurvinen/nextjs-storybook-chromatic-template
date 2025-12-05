@@ -96,10 +96,7 @@ const UnstyledStockPanel: FC<StockPanelProps> = ({
             {props.previewheadline ? props.previewheadline : 'Preview'}
           </Typography>
           <Figure
-            src={`${
-              process.env.NEXT_PUBLIC_BASE_PATH &&
-              process.env.NEXT_PUBLIC_BASE_PATH
-            }/img/${currentImage}.jpg`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/img/${currentImage}.jpg`}
             alt={currentItem}
             figcaption={currentItem}
             imageLoadError={imageLoadError}

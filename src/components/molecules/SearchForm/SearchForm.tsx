@@ -17,19 +17,21 @@ export const StyledSearchForm: FC<SearchFormProps> = ({
   buttonlabel = 'Search',
   onlyicon = false,
 
+  handleKeywords,
+  handleSearch,
   ...props
 }: SearchFormProps) => {
   return (
     <form {...props}>
       <div className='invertcolors'>
         {onlyicon ? (
-          <IconButton className='onlyicon' onClick={props.handleSearch}>
+          <IconButton className='onlyicon' onClick={handleSearch}>
             <Search />
           </IconButton>
         ) : (
           <>
-            <TextField label={textfieldlabel} onChange={props.handleKeywords} />
-            <Button variant='contained' onClick={props.handleSearch} endIcon={<SearchIcon/>}>
+            <TextField label={textfieldlabel} onChange={handleKeywords} />
+            <Button variant='contained' onClick={handleSearch} endIcon={<SearchIcon/>}>
               {buttonlabel}
             </Button>
           </>

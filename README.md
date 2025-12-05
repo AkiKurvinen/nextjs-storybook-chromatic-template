@@ -29,7 +29,7 @@ npm run storybook
 
 **next/image & Storybook basepath workaround:**
 
-- Create/modify .env file and set NEXT_PUBLIC_BASE_PATH to [spacebar] so it's not undefined
+- Create/modify env-example file and set NEXT_PUBLIC_BASE_PATH to [spacebar] so it's not undefined
 - This also allows to run app in dev mode without subfolder in URL
 
 ```bash

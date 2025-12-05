@@ -39,6 +39,7 @@ const UnstyledStockItem: FC<StockItemProps> = ({
   isAdmin,
   isOut,
   color = 'primary',
+  setcurrentitem,
   ...props
 }: StockItemProps) => {
   // Cases for Storybook demo:
@@ -50,7 +51,7 @@ const UnstyledStockItem: FC<StockItemProps> = ({
     <li
       {...props}
       onClick={() => {
-        props.setcurrentitem(label);
+        setcurrentitem(label);
       }}
     >
       <Typography variant='body1' sx={{ margin: 0, padding: 0 }}>

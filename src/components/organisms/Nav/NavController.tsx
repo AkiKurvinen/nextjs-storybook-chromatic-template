@@ -6,7 +6,6 @@ import { useMediaQuery, useTheme } from '@mui/material';
 import {
   useTranslation,
   useLanguageQuery,
-  LanguageSwitcher,
 } from 'next-export-i18n';
 import { LangNav } from '../LangNav/LangNav';
 import { useState } from 'react';
